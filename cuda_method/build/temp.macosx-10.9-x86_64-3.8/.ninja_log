@@ -1,0 +1,16 @@
+# ninja log v5
+0	7644	1631870063251318475	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+3	7678	1631870257477110986	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+3	7619	1631870625420894154	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+6	7859	1631870702887368364	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+4	7854	1631870872260010517	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+7	7898	1631871524921758916	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+2	7981	1631871558833976912	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+2	7597	1631874666635441487	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+2	7517	1631874718136035672	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+2	7474	1631874753935916830	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+3	7788	1631874818470346431	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+5	7886	1631874898496941232	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+3	7901	1631875044393550990	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+16	8159	1631877186426609385	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487
+3	8081	1631877243216817593	/Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o	9f3b84bc64caf487

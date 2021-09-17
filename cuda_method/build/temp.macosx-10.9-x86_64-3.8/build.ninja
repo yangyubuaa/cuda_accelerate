@@ -1,0 +1,20 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/yangyu/opt/anaconda3/include -arch x86_64 -I/Users/yangyu/opt/anaconda3/include -arch x86_64 -I/Users/yangyu/Desktop/cpp_extension/cuda_method -I/Users/yangyu/opt/anaconda3/lib/python3.8/site-packages/torch/include -I/Users/yangyu/opt/anaconda3/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/Users/yangyu/opt/anaconda3/lib/python3.8/site-packages/torch/include/TH -I/Users/yangyu/opt/anaconda3/lib/python3.8/site-packages/torch/include/THC -I/Users/yangyu/opt/anaconda3/include/python3.8 -c
+post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_clang"' '-DPYBIND11_STDLIB="_libcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1002"' -DTORCH_EXTENSION_NAME=cppex_gpu -D_GLIBCXX_USE_CXX11_ABI=0 -std=gnu++14
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+build /Users/yangyu/Desktop/cpp_extension/cuda_method/build/temp.macosx-10.9-x86_64-3.8/Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.o: compile /Users/yangyu/Desktop/cpp_extension/cuda_method/gpu/add.cpp
+
+
+
+
+
