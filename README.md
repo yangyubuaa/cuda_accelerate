@@ -19,3 +19,8 @@
 4. tensor的data_ptr()使用方法：(float*)a.data_ptr<float>()，为指向tensor的数据指针
 5. 使用cuda计算的步骤，计算出矩阵的全局索引，计算当前线程在数组中的位置，更新，注意判断数组越界
 6. 越界判断：矩阵的话可以通过判断矩阵的m和n是否越界，注意cuda线程模型的x是纵坐标，y是横坐标，也可以通过矩阵的大小进行判断。
+##### 项目说明
+1. cpp_method是c++以及libtorch扩展pytorch的样板代码
+2. cuda_method是使用cuda实现矩阵加法使用gpu并行运算进行加速
+3. cuda_matmul是使用cuda实现矩阵乘法使用gpu并行运算进行加速(以上均实现grid-stride-loop,可以处理任意大小的矩阵,而不受cuda core以及SM流多处理器限制)
+4. cuda矩阵乘法算法在cuda_matmul/gpu/matmul_cuda.cu文件
