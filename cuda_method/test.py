@@ -29,13 +29,14 @@ import cppex_gpu
 
 
 if __name__ == "__main__":
-    a = torch.tensor([1, 2, 3], dtype=torch.float64)
-    b = torch.tensor([4, 5, 6, 7], dtype=torch.float64)
-    c = torch.tensor([7, 8, 9, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,1], dtype=torch.float64)
+    a = torch.tensor([1, 2, 3], dtype=torch.float32)
+    b = torch.tensor([4, 5, 6, 7], dtype=torch.float32)
+    c = torch.tensor([[7, 8, 9], [1, 1, 1], [1, 1, 1], [1, 1, 1]], dtype=torch.float32)
     print(torch.cuda.is_available())
     a = a.cuda()
     b = b.cuda()
     c = c.cuda()
+    print(c)
     cppex_gpu.forward(a, b, c)
     print(c)
     # 上面的操作生成了一个计算图，计算图的节点是计算两个向量操作，输入是两个向量，其中一个向量是神经网络的可学习参数
