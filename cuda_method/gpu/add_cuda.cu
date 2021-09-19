@@ -3,12 +3,19 @@
 
 // 通过传递指针进行计算
 
-__global__ void vector_add_kernel(float* a, float* b, float* c, int dim_x, int dim_y){
-    auto dim1 = blockIdx.x * blockDim.x + threadIdx.x;
-    auto dim2 = blockIdx.y * blockDim.y + threadIdx.y;
-    if((dim2*dim_y + dim1)<dim_x*dim_y){
-        c[dim2*dim_y + dim1] = a[dim2*dim_y + dim1] + b[dim2*dim_y + dim1];
+__global__ void vector_add_kernel(float* a, float* b, float* c, int dim_y, int dim_x){
+    auto thread_x = blockIdx.x * blockDim.x + threadIdx.x;
+    auto thread_y = blockIdx.y * blockDim.y + threadIdx.y;
+
+    int stride_x = blockDim.x * gridDim.x;
+    int stride_y = blockDim.y * gridDim.y;
+
+    for(int i=thread_x;i<dim_x;i = i+stride_x){
+        for(int j=thread_y;j<dim_y;j = j + stride_y){
+            c[j*dim_x + i] = a[j*dim_x+i] + b[j*dim_x+i];
+        }
     }
+    
 }
 
 // 通过host可以通过传递引用对tensor直接进行修改，但是通过cuda，不能通过直接传递tensor引用的方式，此处有bug
