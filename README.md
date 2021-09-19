@@ -30,5 +30,5 @@
 2. Storage存储的数据是使用一维数组,高维张量的索引可以转化为一维数组的索引(这也是cuda核函数操作数组的方式),我们可以获取到数据指针,对pytorch前端传来的Tensor进行原地操作(不需要返回).
 3. Storage高维张量存储的一维数组,和C++的高维数组存储的一维数组是一致的.Tensor只是高层封装.所以我们使用cuda操作Tensor和操作C++数组本质上其实是一致的.
 ---
-作者:yangyu  
-@电子邮箱:yangyu2019@buaa.edu.cn
+@作者:yangyu  
+电子邮箱:yangyu2019@buaa.edu.cn
