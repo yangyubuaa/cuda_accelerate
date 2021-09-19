@@ -29,9 +29,12 @@ import cppex_gpu
 
 
 if __name__ == "__main__":
-    a = torch.tensor([1, 2, 3], dtype=torch.float32)
-    b = torch.tensor([4, 5, 6, 7], dtype=torch.float32)
+    a = torch.tensor([[7, 8, 9], [1, 1, 1], [1, 1, 1], [1, 1, 1]], dtype=torch.float32)
+    b = torch.tensor([[7, 8, 9], [1, 1, 1], [1, 1, 1], [1, 1, 1]], dtype=torch.float32)
     c = torch.tensor([[7, 8, 9], [1, 1, 1], [1, 1, 1], [1, 1, 1]], dtype=torch.float32)
+    a = torch.tensor([[1, 2], [3, 4]], dtype=torch.float32)
+    b = torch.tensor([[1, 2], [3, 4]], dtype=torch.float32)
+    c = torch.tensor([[1, 2], [3, 4]], dtype=torch.float32)
     print(torch.cuda.is_available())
     a = a.cuda()
     b = b.cuda()

@@ -3,11 +3,11 @@
 
 // 通过传递指针进行计算
 
-__global__ void vector_add_kernel(const float* a, const float* b, float* c, int dim_x, int dim_y){
+__global__ void vector_add_kernel(float* a, float* b, float* c, int dim_x, int dim_y){
     auto dim1 = blockIdx.x * blockDim.x + threadIdx.x;
     auto dim2 = blockIdx.y * blockDim.y + threadIdx.y;
     if((dim2*dim_y + dim1)<dim_x*dim_y){
-        c[dim2*dim_y + dim1] = 15;
+        c[dim2*dim_y + dim1] = a[dim2*dim_y + dim1] + b[dim2*dim_y + dim1];
     }
 }
 
